@@ -3,56 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EGS Map – Embedded Demo</title>
+  <title>Eurogas – Stations Map Demo</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f9fc;
-      color: #333;
+      background: #f5f7fb;
+      color: #1a1a1a;
     }
 
+    /* Header */
     header {
-      background: #0f172a;
-      color: #fff;
-      padding: 16px 24px;
-      font-size: 18px;
-      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 32px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
     }
 
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #1e3a8a;
+    }
+
+    .menu {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* Main Section */
+    .hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 300px;
+      height: 3px;
+      background: #1a1a1a;
+      margin: 10px auto 20px;
+    }
+
+    .note {
+      color: #1e40af;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: 1px solid #1e3a8a;
+      padding: 10px 18px;
+      background: white;
+      color: #1e3a8a;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .btn.active {
+      background: #1e3a8a;
+      color: white;
+    }
+
+    /* Card */
     .container {
-      padding: 20px;
+      padding: 0 20px 40px;
     }
 
     .card {
-      background: #fff;
+      max-width: 1200px;
+      margin: auto;
+      background: white;
       border-radius: 10px;
       padding: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .title {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     }
 
     iframe {
       width: 100%;
       height: 600px;
-      border: 1px solid #ddd;
+      border: none;
       border-radius: 8px;
     }
 
+    /* Embed code */
     .code {
-      margin-top: 20px;
+      margin-top: 16px;
       background: #0f172a;
       color: #e2e8f0;
       padding: 12px;
@@ -64,7 +117,7 @@
 
     footer {
       text-align: center;
-      padding: 16px;
+      padding: 20px;
       font-size: 12px;
       color: #888;
     }
@@ -73,19 +126,33 @@
 
 <body>
 
+  <!-- Header -->
   <header>
-    EGS Map – Iframe Integration Demo
+    <div class="logo">eurogas</div>
+    <div class="menu">☰</div>
   </header>
 
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Stations map – Get directions</h1>
+    <div class="underline"></div>
+
+    <div class="note">
+      This map is only replicable with permission by Eurogas and gibgas, who owns and manages the data.
+    </div>
+
+    <div class="buttons">
+      <button class="btn">Radius search</button>
+      <button class="btn">Stations map</button>
+      <button class="btn active">Get directions</button>
+    </div>
+  </div>
+
+  <!-- Iframe Section -->
   <div class="container">
     <div class="card">
-      <div class="title">Embedded Application Preview</div>
-      <div class="subtitle">
-        This demonstrates how the EGS Map application can be embedded into any website using an iframe.
-      </div>
-
       <iframe 
-        src="https://egs-station-map.netlify.app/radius"
+        src="https://your-app.netlify.app"
         loading="lazy">
       </iframe>
 
@@ -101,7 +168,7 @@
   </div>
 
   <footer>
-    © 2026 EGS Map Demo • Embedded Integration Example
+    © 2026 Eurogas Demo • Iframe Integration Example
   </footer>
 
 </body>
