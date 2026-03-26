@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EGS Map iFrame Test</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #iframe-container {
+        width: 100%;
+        height: 100vh;
+        padding: 16px;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 32px;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .logo {
+        font-weight: bold;
+        font-size: 20px;
+        color: #1e3a8a;
+      }
+      .menu {
+        font-size: 22px;
+        cursor: pointer;
+      }
+
+      /* Main Section */
+      .hero {
+        text-align: center;
+        padding: 50px 20px 30px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .underline {
+        width: 300px;
+        height: 3px;
+        background: #1a1a1a;
+        margin: 10px auto 20px;
+      }
+
+      .note {
+        color: #1e40af;
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">eurogas</div>
+      <div class="menu">☰</div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Stations map – Get directions</h1>
+      <div class="underline"></div>
+
+      <div class="note">
+        This map is only replicable with permission by Eurogas and gibgas, who
+        owns and manages the data.
+      </div>
+
+      <h3>EGS Station Map — iFrame Embed Test</h3>
+    </div>
+
+    <div id="iframe-container">
+      <iframe
+        src="http://localhost:5173"
+        title="EGS Station Map"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <footer>
+      &copy; 2026 Eurogas. All rights reserved. | Developed by Swapnil Gatha
+    </footer>
+  </body>
+</html>
