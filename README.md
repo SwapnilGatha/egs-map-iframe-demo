@@ -7,7 +7,7 @@ This repository provides a demonstration of how the **EGS Stations Map applicati
 ## 🚀 Live Demo Links
 
 ### 🔹 1. Branded Demo (Client-ready UI)
-👉 https://your-username.github.io/repo-name/
+👉 https://swapnilgatha.github.io/egs-map-iframe-demo/
 
 **Description:**
 - Fully styled UI aligned with Eurogas design
@@ -18,7 +18,7 @@ This repository provides a demonstration of how the **EGS Stations Map applicati
 ---
 
 ### 🔹 2. Minimal Demo (Simple Embed Test)
-👉 https://your-username.github.io/repo-name/simple.html
+👉 https://swapnilgatha.github.io/egs-map-iframe-demo/simple.html
 
 **Description:**
 - Lightweight iframe-only page
